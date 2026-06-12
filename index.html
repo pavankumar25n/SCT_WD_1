@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminos – Design Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Luminos home">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Luminos</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#home"     class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#work"     class="nav-link" data-section="work">Work</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#about"    class="nav-link" data-section="about">About</a></li>
+        <li><a href="#contact"  class="nav-link nav-cta" data-section="contact">Get in touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section id="home" class="section hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow">Design Studio · Est. 2024</p>
+      <h1 class="hero-headline">
+        We craft<br />
+        <span class="headline-accent">digital worlds</span><br />
+        worth living in.
+      </h1>
+      <p class="hero-sub">Brand identity, web design, and motion — built for companies that refuse to be ordinary.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See our work</a>
+        <a href="#contact" class="btn btn-ghost">Start a project</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       MARQUEE STRIP
+  ═══════════════════════════════════════ -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span>·</span>
+      <span>Web Design</span><span>·</span>
+      <span>Motion Graphics</span><span>·</span>
+      <span>UI/UX</span><span>·</span>
+      <span>Design Systems</span><span>·</span>
+      <span>Art Direction</span><span>·</span>
+      <span>Brand Identity</span><span>·</span>
+      <span>Web Design</span><span>·</span>
+      <span>Motion Graphics</span><span>·</span>
+      <span>UI/UX</span><span>·</span>
+      <span>Design Systems</span><span>·</span>
+      <span>Art Direction</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       WORK / PORTFOLIO
+  ═══════════════════════════════════════ -->
+  <section id="work" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title">Projects we're proud of</h2>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card work-card--large">
+          <div class="work-card-img" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364)">
+            <div class="work-card-tag">Brand Identity</div>
+            <div class="work-mockup">
+              <div class="mockup-circle"></div>
+              <div class="mockup-bar"></div>
+              <div class="mockup-bar short"></div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <h3>Vertex Capital</h3>
+            <p>Full identity system for a Series-B fintech firm — from wordmark to pitch deck.</p>
+            <a href="#" class="work-link" aria-label="View Vertex Capital project">View →</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-img" style="background: linear-gradient(135deg, #1a1a2e, #16213e, #533483)">
+            <div class="work-card-tag">Web Design</div>
+            <div class="work-mockup browser">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="browser-body"></div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <h3>Solace Health</h3>
+            <p>Patient-centered web experience for a wellness startup.</p>
+            <a href="#" class="work-link" aria-label="View Solace Health project">View →</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-card-img" style="background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #2d1b00)">
+            <div class="work-card-tag">Motion</div>
+            <div class="work-mockup">
+              <div class="play-btn">▶</div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <h3>Ember Studio</h3>
+            <p>Brand film and motion system for an architectural practice.</p>
+            <a href="#" class="work-link" aria-label="View Ember Studio project">View →</a>
+          </div>
+        </article>
+
+        <article class="work-card work-card--wide">
+          <div class="work-card-img" style="background: linear-gradient(135deg, #0a0a0a, #1c1c3a, #2e1760)">
+            <div class="work-card-tag">Design System</div>
+            <div class="work-mockup ds-mockup">
+              <div class="ds-swatch" style="background:#7c3aed"></div>
+              <div class="ds-swatch" style="background:#a78bfa"></div>
+              <div class="ds-swatch" style="background:#ddd6fe"></div>
+              <div class="ds-swatch" style="background:#1e1b4b"></div>
+            </div>
+          </div>
+          <div class="work-card-info">
+            <h3>Prisma Design System</h3>
+            <p>A scalable component library and token architecture for a SaaS platform with 12 product teams.</p>
+            <a href="#" class="work-link" aria-label="View Prisma Design System project">View →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
+  <section id="services" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <p class="eyebrow">What we do</p>
+        <h2 class="section-title">Services built for builders</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon">◐</div>
+          <h3>Brand Identity</h3>
+          <p>Strategy, naming, visual identity, and guidelines — everything a brand needs to communicate clearly at any scale.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">⬡</div>
+          <h3>Web Design</h3>
+          <p>Responsive, accessible websites that translate brand into digital experience — from landing pages to full platforms.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">◎</div>
+          <h3>Motion & Film</h3>
+          <p>Brand films, UI animations, and motion systems that add depth without distraction.</p>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">⊞</div>
+          <h3>Design Systems</h3>
+          <p>Component libraries, token architectures, and documentation that help teams move fast with consistency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT / STATS
+  ═══════════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container about-layout">
+      <div class="about-text">
+        <p class="eyebrow">About us</p>
+        <h2 class="section-title">Fewer clients.<br />Better work.</h2>
+        <p class="about-body">We're a small studio with an intentional limit on how many projects we take on at once. That constraint is the product — it means every client gets our full attention, and every project gets the time it deserves to be genuinely good.</p>
+        <p class="about-body">Founded in 2024, we've worked with startups, scale-ups, and the occasional fortune-500 skunkworks team that needed to move like a startup.</p>
+        <a href="#contact" class="btn btn-primary" style="margin-top:2rem">Work with us</a>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">48</span>
+          <span class="stat-label">Projects shipped</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Active projects at a time</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Client retention rate</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Industries served</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
+  <section class="section section--alt testimonials">
+    <div class="container">
+      <p class="eyebrow" style="text-align:center">What clients say</p>
+      <div class="testimonials-grid">
+        <blockquote class="testimonial">
+          <p>"Luminos didn't just redesign our brand — they found what it actually was. That's a much harder problem and they solved it."</p>
+          <footer><strong>Priya Nair</strong> · CEO, Vertex Capital</footer>
+        </blockquote>
+        <blockquote class="testimonial testimonial--accent">
+          <p>"Working with a small studio was a deliberate choice. No account managers, no handoffs — just great designers who care."</p>
+          <footer><strong>Marcus Webb</strong> · Head of Product, Solace Health</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"The design system they built scaled from 3 to 60 engineers without a single design debt conversation. That's craft."</p>
+          <footer><strong>Aiko Tanaka</strong> · Engineering Lead, Prisma</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CONTACT / CTA
+  ═══════════════════════════════════════ -->
+  <section id="contact" class="section section--cta">
+    <div class="container cta-content">
+      <p class="eyebrow">Start a project</p>
+      <h2 class="cta-headline">Ready to make<br /><span class="headline-accent">something real?</span></h2>
+      <p class="cta-sub">We take on new projects in cohorts of three. Tell us what you're building and we'll see if we're a fit.</p>
+      <form class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Ada Lovelace" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="ada@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="project">Tell us about your project</label>
+          <textarea id="project" name="project" rows="4" placeholder="What are you building, and why does it matter?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn--full">Send message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">◈</span>
+        <span class="logo-text">Luminos</span>
+        <p>Design studio. Est. 2024.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Dribbble">⚪</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Luminos Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
